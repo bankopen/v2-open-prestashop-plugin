@@ -1,0 +1,9 @@
+## author MY-Dev |Mohamed Youssef <mydev@my-dev.pro> ##
+zwitch_configuration_form:
+  path: /zwitch/configuration
+  methods: [GET, POST]
+  defaults:
+    _controller: 'PrestaShop\Module\Zwitch\Controller\ZwitchConfigurationController::index'
+    # Needed to work with tab system
+    _legacy_controller: AdminDemoSymfonyForm
+    _legacy_link: AdminDemoSymfonyForm
